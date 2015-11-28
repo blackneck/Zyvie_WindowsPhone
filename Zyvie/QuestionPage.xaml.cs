@@ -124,10 +124,18 @@ namespace Zyvie
 
         private void SetAnswerColor(Button answerButton, bool isRight)
         {
-            var answerColor = isRight
+            //var answerColor = isRight
+            //    ? Color.FromArgb(255, 0, 255, 0)
+            //    : Color.FromArgb(255, 255, 0, 0);
+            //answerButton.Background = new SolidColorBrush(answerColor);
+
+
+            var borderColor = isRight
                 ? Color.FromArgb(255, 0, 255, 0)
                 : Color.FromArgb(255, 255, 0, 0);
-            answerButton.Background = new SolidColorBrush(answerColor);
+
+            answerButton.BorderBrush = new SolidColorBrush(borderColor);
+            answerButton.BorderThickness = new Thickness(2);
         }
 
         private bool IsRightAnswer(Button answerButton)
@@ -136,15 +144,21 @@ namespace Zyvie
             return isRight;
         }
 
-        private void AppBarButtonNext_Click(object sender, RoutedEventArgs e)
+        private void ButtonNext_Click(object sender, RoutedEventArgs e)
         {
-            var answerColor = Color.FromArgb(255, 0, 0, 0);
-            var background = new SolidColorBrush(answerColor);
+        //    var answerColor = Color.FromArgb(255, 0, 0, 0);
+        //    var background = new SolidColorBrush();
 
-            Answer1.Background = background;
-            Answer2.Background = background;
-            Answer3.Background = background;
-            Answer4.Background = background;
+        //    Answer1.Background = background;
+        //    Answer2.Background = background;
+        //    Answer3.Background = background;
+        //    Answer4.Background = background;
+
+            var baseBorderBrush = new SolidColorBrush(Color.FromArgb(255, 99, 20, 0));
+            Answer1.BorderBrush = baseBorderBrush;
+            Answer2.BorderBrush = baseBorderBrush;
+            Answer3.BorderBrush = baseBorderBrush;
+            Answer4.BorderBrush = baseBorderBrush;
 
             var viewModel = (QuestionPageViewModel)DataContext;
 

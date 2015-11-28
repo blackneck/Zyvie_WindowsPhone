@@ -9,7 +9,11 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Button x:ConnectionId='1' x:Name="NextButton" Content="пачаць гульню"  Margin="10,436,0,147" Width="380"                         ></Button>
+        <Button x:ConnectionId='1' x:Name="NextButton" Content="Пачаць гульню"  Margin="63,482,0,100" Width="274"                          Height="56" BorderThickness="0" FontFamily="Aharoni" FontSize="18" FontWeight="Bold">
+            <Button.Background>
+                <ImageBrush ImageSource="Assets/ButtonStart.png" Opacity="0.8"/>
+            </Button.Background>
+        </Button>
         <Image HorizontalAlignment="Left" Height="431" Margin="10,10,0,0" VerticalAlignment="Top" Width="380" Source="Assets/Logo322.png"/>
     </Grid>
 </Page>

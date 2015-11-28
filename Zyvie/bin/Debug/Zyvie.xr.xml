@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
   <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="ChangeCurrentQuestionCommand" />
     <RootPropertyPathName Name="CurrentQuestion" />
     <RootPropertyPathName Name="AnswersList" />
     <RootPropertyPathName Name="IsRight" />
     <RootPropertyPathName Name="Body" />
     <RootPropertyPathName Name="UpdateCurrentQuestionCommand" />
     <RootPropertyPathName Name="Title" />
-    <RootPropertyPathName Name="ChangeCurrentQuestionCommand" />
     <RootPropertyPathName Name="CorrectAnswersRate" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
@@ -17,16 +17,18 @@
       <RootProperty Name="Background" />
       <RootProperty Name="DataContext" />
       <RootProperty Name="Content" />
-      <RootProperty Name="BottomAppBar" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.ImageBrush">
-      <RootProperty Name="Stretch" />
       <RootProperty Name="ImageSource" />
       <RootProperty Name="Opacity" />
+      <RootProperty Name="Stretch" />
       <RootProperty Name="AlignmentY" />
       <RootProperty Name="RelativeTransform" />
+      <RootProperty Name="AlignmentX" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.CompositeTransform">
+      <RootProperty Name="CenterY" />
+      <RootProperty Name="CenterX" />
       <RootProperty Name="ScaleY" />
       <RootProperty Name="ScaleX" />
     </RootType>
@@ -37,6 +39,8 @@
       <RootProperty Name="Children" />
       <RootMethod Name="GetRow" />
       <RootMethod Name="SetRow" />
+      <RootMethod Name="GetRowSpan" />
+      <RootMethod Name="SetRowSpan" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.Animation.TransitionCollection" />
     <RootType FullName="Windows.UI.Xaml.Media.Animation.EntranceThemeTransition" />
@@ -45,10 +49,6 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
       <RootProperty Name="Margin" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Width" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="HorizontalAlignment" />
@@ -78,27 +78,28 @@
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="BorderThickness" />
       <RootProperty Name="Content" />
+      <RootProperty Name="RenderTransformOrigin" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Opacity" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="ClickMode" />
+      <RootProperty Name="ManipulationMode" />
+      <RootProperty Name="FontFamily" />
+      <RootProperty Name="FontWeight" />
       <RootEvent Name="Click" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Data.Binding" />
-    <RootType FullName="Windows.UI.Xaml.Controls.CommandBar">
-      <RootProperty Name="PrimaryCommands" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.AppBarButton">
-      <RootProperty Name="Icon" />
-      <RootProperty Name="Command" />
-      <RootEvent Name="Click" />
-    </RootType>
-    <RootType FullName="Zyvie.QuestionPage" />
-    <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.Image">
+      <RootProperty Name="Source" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Height" />
       <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
-      <RootProperty Name="Source" />
+      <RootProperty Name="Opacity" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding" />
+    <RootType FullName="Zyvie.QuestionPage" />
+    <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="Zyvie.MainPage" />
     <RootType FullName="Zyvie.ViewModels.ResultsPageViewModel" />
     <RootType FullName="Zyvie.ResultsPage" />

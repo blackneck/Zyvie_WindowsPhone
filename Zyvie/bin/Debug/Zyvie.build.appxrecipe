@@ -22,6 +22,24 @@
     <AppxPackagedFile Include="E:\GitHub\Zyvie_WindowsPhone\packages\Newtonsoft.Json.7.0.1\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Zyvie_WindowsPhone\Zyvie\Assets\AppBarButtonBack.png">
+      <PackagePath>Assets\AppBarButtonBack.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Zyvie_WindowsPhone\Zyvie\Assets\AppBarButtonForward.png">
+      <PackagePath>Assets\AppBarButtonForward.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Zyvie_WindowsPhone\Zyvie\Assets\ButtonAnswer.png">
+      <PackagePath>Assets\ButtonAnswer.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Zyvie_WindowsPhone\Zyvie\Assets\ButtonAnswerRight.png">
+      <PackagePath>Assets\ButtonAnswerRight.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Zyvie_WindowsPhone\Zyvie\Assets\ButtonAnswerWrong.png">
+      <PackagePath>Assets\ButtonAnswerWrong.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Zyvie_WindowsPhone\Zyvie\Assets\ButtonStart.png">
+      <PackagePath>Assets\ButtonStart.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\GitHub\Zyvie_WindowsPhone\Zyvie\Assets\Logo.scale-240.png">
       <PackagePath>Assets\Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
@@ -36,6 +54,9 @@
     <AppxPackagedFile Include="E:\GitHub\Zyvie_WindowsPhone\Zyvie\Assets\SplashScreen.scale-240.png">
       <PackagePath>Assets\SplashScreen.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Zyvie_WindowsPhone\Zyvie\Assets\Square.png">
+      <PackagePath>Assets\Square.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\GitHub\Zyvie_WindowsPhone\Zyvie\Assets\Square71x71Logo.scale-240.png">
       <PackagePath>Assets\Square71x71Logo.scale-240.png</PackagePath>
