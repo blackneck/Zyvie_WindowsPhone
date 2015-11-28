@@ -10,5 +10,6 @@
 
     <Grid>
         <Button x:Name="NextButton" Content="пачаць гульню"  Margin="10,436,0,147" Width="380" Click="NextButton_Click"></Button>
+        <Image HorizontalAlignment="Left" Height="431" Margin="10,10,0,0" VerticalAlignment="Top" Width="380" Source="Assets/Logo322.png"/>
     </Grid>
 </Page>
