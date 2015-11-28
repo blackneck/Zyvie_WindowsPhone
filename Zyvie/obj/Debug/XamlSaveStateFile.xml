@@ -1,5 +1,6 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
     <LocalAssembly PathName="c:\users\demom_000\codes\zyvie\zyvie\obj\debug\intermediatexaml\zyvie.exe" HashGuid="31194fe2-8aa4-0016-be25-0159be0de9f3" />
+    <ReferenceAssembly PathName="e:\github\zyvie_windowsphone\packages\newtonsoft.json.7.0.1\lib\portable-net40+sl5+wp80+win8+wpa81\newtonsoft.json.dll" HashGuid="0b4cdfc1-2257-2e75-23cf-4052e97b309e" />
   </ReferenceAssemblyList>
 </XamlCompilerSaveState>

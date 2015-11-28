@@ -1,61 +1,64 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>GLADOS</Machine>
-    <WindowsUser>demom_000</WindowsUser>
+    <Machine>EVGENIA-PC</Machine>
+    <WindowsUser>Evgenia</WindowsUser>
     <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>b99d81d3-e3da-4101-ba38-ba27f05049dd</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\demom_000\codes\Zyvie\Zyvie\obj\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>E:\GitHub\Zyvie_WindowsPhone\Zyvie\obj\Debug\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\demom_000\codes\Zyvie\Zyvie\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="E:\GitHub\Zyvie_WindowsPhone\Zyvie\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\demom_000\codes\Zyvie\Zyvie\bin\Debug\Zyvie.exe">
+    <AppxPackagedFile Include="E:\GitHub\Zyvie_WindowsPhone\Zyvie\bin\Debug\Zyvie.exe">
       <PackagePath>Zyvie.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\demom_000\codes\Zyvie\Zyvie\Assets\Logo.scale-240.png">
+    <AppxPackagedFile Include="E:\GitHub\Zyvie_WindowsPhone\packages\Newtonsoft.Json.7.0.1\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Zyvie_WindowsPhone\Zyvie\Assets\Logo.scale-240.png">
       <PackagePath>Assets\Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\demom_000\codes\Zyvie\Zyvie\Assets\SmallLogo.scale-240.png">
+    <AppxPackagedFile Include="E:\GitHub\Zyvie_WindowsPhone\Zyvie\Assets\SmallLogo.scale-240.png">
       <PackagePath>Assets\SmallLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\demom_000\codes\Zyvie\Zyvie\Assets\SplashScreen.scale-240.png">
+    <AppxPackagedFile Include="E:\GitHub\Zyvie_WindowsPhone\Zyvie\Assets\SplashScreen.scale-240.png">
       <PackagePath>Assets\SplashScreen.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\demom_000\codes\Zyvie\Zyvie\Assets\Square71x71Logo.scale-240.png">
+    <AppxPackagedFile Include="E:\GitHub\Zyvie_WindowsPhone\Zyvie\Assets\Square71x71Logo.scale-240.png">
       <PackagePath>Assets\Square71x71Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\demom_000\codes\Zyvie\Zyvie\Assets\StoreLogo.scale-240.png">
+    <AppxPackagedFile Include="E:\GitHub\Zyvie_WindowsPhone\Zyvie\Assets\StoreLogo.scale-240.png">
       <PackagePath>Assets\StoreLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\demom_000\codes\Zyvie\Zyvie\Assets\WideLogo.scale-240.png">
+    <AppxPackagedFile Include="E:\GitHub\Zyvie_WindowsPhone\Zyvie\Assets\WideLogo.scale-240.png">
       <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\demom_000\codes\Zyvie\Zyvie\bin\Debug\App.xbf">
+    <AppxPackagedFile Include="E:\GitHub\Zyvie_WindowsPhone\Zyvie\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\demom_000\codes\Zyvie\Zyvie\bin\Debug\QuestionPage.xbf">
+    <AppxPackagedFile Include="E:\GitHub\Zyvie_WindowsPhone\Zyvie\bin\Debug\QuestionPage.xbf">
       <PackagePath>QuestionPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\demom_000\codes\Zyvie\Zyvie\bin\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="E:\GitHub\Zyvie_WindowsPhone\Zyvie\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\demom_000\codes\Zyvie\Zyvie\bin\Debug\Zyvie.xr.xml">
+    <AppxPackagedFile Include="E:\GitHub\Zyvie_WindowsPhone\Zyvie\bin\Debug\Zyvie.xr.xml">
       <PackagePath>Zyvie.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\demom_000\codes\Zyvie\Zyvie\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="E:\GitHub\Zyvie_WindowsPhone\Zyvie\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
