@@ -13,5 +13,6 @@ namespace Zyvie.Models
         public List<Answer> AnswersList { get; set; }
 
         public bool IsAnswered { get; set; }
+        public bool IsCorrectlyAnswered { get; set; }
     }
 }

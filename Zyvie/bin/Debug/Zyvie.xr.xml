@@ -1,22 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
   <Roots.PropertyPathNames>
-    <RootPropertyPathName Name="Quiz" />
     <RootPropertyPathName Name="CurrentQuestion" />
     <RootPropertyPathName Name="AnswersList" />
-    <RootPropertyPathName Name="Body" />
     <RootPropertyPathName Name="IsRight" />
+    <RootPropertyPathName Name="Body" />
+    <RootPropertyPathName Name="UpdateCurrentQuestionCommand" />
     <RootPropertyPathName Name="Title" />
+    <RootPropertyPathName Name="ChangeCurrentQuestionCommand" />
+    <RootPropertyPathName Name="CorrectAnswersRate" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application" />
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
+      <RootProperty Name="Width" />
       <RootProperty Name="Background" />
       <RootProperty Name="DataContext" />
       <RootProperty Name="Content" />
       <RootProperty Name="BottomAppBar" />
     </RootType>
-    <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.ThemeResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.Media.ImageBrush">
+      <RootProperty Name="Stretch" />
+      <RootProperty Name="ImageSource" />
+      <RootProperty Name="Opacity" />
+      <RootProperty Name="AlignmentY" />
+      <RootProperty Name="RelativeTransform" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.CompositeTransform">
+      <RootProperty Name="ScaleY" />
+      <RootProperty Name="ScaleX" />
+    </RootType>
     <RootType FullName="Zyvie.ViewModels.QuestionPageViewModel" />
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
       <RootProperty Name="ChildrenTransitions" />
@@ -24,8 +37,6 @@
       <RootProperty Name="Children" />
       <RootMethod Name="GetRow" />
       <RootMethod Name="SetRow" />
-      <RootMethod Name="GetColumn" />
-      <RootMethod Name="SetColumn" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.Animation.TransitionCollection" />
     <RootType FullName="Windows.UI.Xaml.Media.Animation.EntranceThemeTransition" />
@@ -34,7 +45,6 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
       <RootProperty Name="Margin" />
-      <RootProperty Name="Children" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Height" />
       <RootProperty Name="VerticalAlignment" />
@@ -46,7 +56,6 @@
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="Text" />
       <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Height" />
       <RootProperty Name="Width" />
       <RootProperty Name="RequestedTheme" />
       <RootProperty Name="Foreground" />
@@ -54,16 +63,21 @@
       <RootProperty Name="FontWeight" />
       <RootProperty Name="FontFamily" />
       <RootProperty Name="TextAlignment" />
+      <RootProperty Name="Height" />
       <RootProperty Name="Style" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
-      <RootProperty Name="Content" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
+      <RootProperty Name="Command" />
       <RootProperty Name="CommandParameter" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="Content" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.Binding" />
@@ -72,8 +86,21 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.AppBarButton">
       <RootProperty Name="Icon" />
+      <RootProperty Name="Command" />
+      <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Zyvie.QuestionPage" />
+    <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.ThemeResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Image">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Source" />
+    </RootType>
     <RootType FullName="Zyvie.MainPage" />
+    <RootType FullName="Zyvie.ViewModels.ResultsPageViewModel" />
+    <RootType FullName="Zyvie.ResultsPage" />
   </Roots.RootTypes>
 </Roots>

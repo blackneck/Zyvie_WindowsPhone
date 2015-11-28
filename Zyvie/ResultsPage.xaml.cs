@@ -15,9 +15,6 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-using Zyvie.Models;
-using Windows.UI;
-using Zyvie.ViewModels;
 
 // The Basic Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
 
@@ -26,12 +23,12 @@ namespace Zyvie
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class QuestionPage : Page
+    public sealed partial class ResultsPage : Page
     {
         private NavigationHelper navigationHelper;
         private ObservableDictionary defaultViewModel = new ObservableDictionary();
 
-        public QuestionPage()
+        public ResultsPage()
         {
             this.InitializeComponent();
 
@@ -110,49 +107,5 @@ namespace Zyvie
         }
 
         #endregion
-
-        private void Answer_Click(object sender, RoutedEventArgs e)
-        {
-            var answerButton = (Button)sender;
-            var isRight = IsRightAnswer(answerButton);
-
-            SetAnswerColor(answerButton, isRight);
-
-            var viewModel = (QuestionPageViewModel)DataContext;
-            viewModel.UpdateCurrentQuestion(isRight);
-        }
-
-        private void SetAnswerColor(Button answerButton, bool isRight)
-        {
-            var answerColor = isRight
-                ? Color.FromArgb(255, 0, 255, 0)
-                : Color.FromArgb(255, 255, 0, 0);
-            answerButton.Background = new SolidColorBrush(answerColor);
-        }
-
-        private bool IsRightAnswer(Button answerButton)
-        {
-            var isRight = Boolean.Parse(answerButton.CommandParameter.ToString());
-            return isRight;
-        }
-
-        private void AppBarButtonNext_Click(object sender, RoutedEventArgs e)
-        {
-            var answerColor = Color.FromArgb(255, 0, 0, 0);
-            var background = new SolidColorBrush(answerColor);
-
-            Answer1.Background = background;
-            Answer2.Background = background;
-            Answer3.Background = background;
-            Answer4.Background = background;
-
-            var viewModel = (QuestionPageViewModel)DataContext;
-
-            if (viewModel.AreAllQuestionsAnswered())
-            {
-                viewModel.FinishQuiz();
-                Frame.Navigate(typeof(ResultsPage));
-            }
-        }
     }
 }

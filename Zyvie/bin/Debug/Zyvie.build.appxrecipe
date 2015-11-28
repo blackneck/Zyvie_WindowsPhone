@@ -26,6 +26,9 @@
       <PackagePath>Assets\Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Zyvie_WindowsPhone\Zyvie\Assets\logo322.png">
+      <PackagePath>Assets\logo322.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\GitHub\Zyvie_WindowsPhone\Zyvie\Assets\SmallLogo.scale-240.png">
       <PackagePath>Assets\SmallLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
@@ -54,6 +57,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\GitHub\Zyvie_WindowsPhone\Zyvie\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\Zyvie_WindowsPhone\Zyvie\bin\Debug\ResultsPage.xbf">
+      <PackagePath>ResultsPage.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\GitHub\Zyvie_WindowsPhone\Zyvie\bin\Debug\Zyvie.xr.xml">
       <PackagePath>Zyvie.xr.xml</PackagePath>
