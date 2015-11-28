@@ -15,6 +15,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Zyvie.Models;
+using Windows.UI;
 
 // The Basic Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
 
@@ -107,5 +109,28 @@ namespace Zyvie
         }
 
         #endregion
+
+        private void Answer_Click(object sender, RoutedEventArgs e)
+        {
+            SetAnswerColor(sender);
+        }
+
+        private void SetAnswerColor(Object sender)
+        {
+            var answerButton = (Button)sender;
+            var answerColor = IsRightAnswer(answerButton) ? Color.FromArgb(255, 0, 255, 0) : Color.FromArgb(255, 255, 0, 0);
+            answerButton.Background = new SolidColorBrush(answerColor);
+        }
+
+        private bool IsRightAnswer(Button answerButton)
+        {
+            var isRight = Boolean.Parse(answerButton.CommandParameter.ToString());//(Answer)answerButton.CommandParameter;
+            return isRight;
+        }
+
+        private void AppBarButtonNext_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

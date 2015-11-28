@@ -9,6 +9,6 @@ namespace Zyvie.Models
     {
         public int Id { get; set; }
         public string Body { get; set; }
-        public bool Right { get; set; }
+        public bool IsRight { get; set; }
     }
 }

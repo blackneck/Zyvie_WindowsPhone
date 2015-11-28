@@ -10,6 +10,8 @@ namespace Zyvie.Models
     {
         public int Id { get; set; }
         public string Title { get; set; }
-        public List<Answer> Answers { get; set; }
+        public List<Answer> AnswersList { get; set; }
+
+        public bool IsAnswered { get; set; }
     }
 }
