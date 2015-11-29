@@ -80,3 +80,17 @@ E:\GitHub\Zyvie_WindowsPhone\Zyvie\obj\Debug\qualifiers.txt
 E:\GitHub\Zyvie_WindowsPhone\Zyvie\obj\Debug\qualifiers.txt.intermediate
 E:\GitHub\Zyvie_WindowsPhone\Zyvie\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 E:\GitHub\Zyvie_WindowsPhone\Zyvie\obj\Debug\ProjectArchitectures.txt
+C:\Users\demom_000\codes\Zyvie\Zyvie\bin\Debug\ResultsPage.xbf
+C:\Users\demom_000\codes\Zyvie\Zyvie\bin\Debug\Newtonsoft.Json.dll
+C:\Users\demom_000\codes\Zyvie\Zyvie\bin\Debug\Newtonsoft.Json.xml
+C:\Users\demom_000\codes\Zyvie\Zyvie\obj\Debug\ResultsPage.g.i.cs
+C:\Users\demom_000\codes\Zyvie\Zyvie\obj\Debug\ResultsPage.g.cs
+C:\Users\demom_000\codes\Zyvie\Zyvie\obj\Debug\ResultsPage.xaml
+C:\Users\demom_000\codes\Zyvie\Zyvie\obj\Debug\ResultsPage.xbf
+C:\Users\demom_000\codes\Zyvie\Zyvie\obj\Debug\Zyvie.csproj.GenerateResource.Cache
+C:\Users\demom_000\codes\Zyvie\Zyvie\obj\Debug\TotalSummaryPage.g.i.cs
+C:\Users\demom_000\codes\Zyvie\Zyvie\obj\Debug\TotalSummaryPage.g.cs
+C:\Users\demom_000\codes\Zyvie\Zyvie\bin\Debug\TotalSummaryPage.xbf
+C:\Users\demom_000\codes\Zyvie\Zyvie\obj\Debug\TotalSummaryPage.xaml
+C:\Users\demom_000\codes\Zyvie\Zyvie\obj\Debug\TotalSummaryPage.xbf
+C:\Users\demom_000\codes\Zyvie\Zyvie\obj\Debug\Zyvie.csprojResolveAssemblyReference.cache

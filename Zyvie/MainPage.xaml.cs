@@ -11,6 +11,7 @@ using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=391641
@@ -25,8 +26,31 @@ namespace Zyvie
         public MainPage()
         {
             this.InitializeComponent();
-
+            this.Loaded += MainPage_Loaded;
             this.NavigationCacheMode = NavigationCacheMode.Required;
+        }
+
+        void MainPage_Loaded(object sender, RoutedEventArgs e)
+        {
+            Duration duration = new Duration(TimeSpan.FromSeconds(80));
+            Storyboard storyBoard = new Storyboard();
+            storyBoard.RepeatBehavior = RepeatBehavior.Forever;
+            storyBoard.Duration = duration;
+
+            DoubleAnimation doubleAnimation = new DoubleAnimation();
+            doubleAnimation.Duration = duration;                        
+
+            storyBoard.Children.Add(doubleAnimation);
+
+            RotateTransform rotateTransform = new RotateTransform();
+
+            Storyboard.SetTarget(doubleAnimation, rotateTransform);
+            Storyboard.SetTargetProperty(doubleAnimation, "Angle");
+            doubleAnimation.To = 360;
+
+            LogoImage.RenderTransform = rotateTransform;            
+
+            storyBoard.Begin();
         }
 
         /// <summary>

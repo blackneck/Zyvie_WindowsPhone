@@ -8,11 +8,13 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d" Width="400">
     <Page.Background>
-        <ImageBrush ImageSource="Assets/logo322.png" Opacity="0.2" Stretch="None" AlignmentY="Top">
+        <SolidColorBrush Color="Gainsboro">
+        </SolidColorBrush>
+        <!--<ImageBrush ImageSource="Assets/logo322.png" Opacity="0.2" Stretch="None" AlignmentY="Top">
             <ImageBrush.RelativeTransform>
                 <CompositeTransform CenterY="0.3" CenterX="0.5" ScaleY="0.85" ScaleX="0.85"/>
             </ImageBrush.RelativeTransform>
-        </ImageBrush>
+        </ImageBrush>-->
     </Page.Background>
 
     <Page.DataContext>
@@ -20,6 +22,13 @@
     </Page.DataContext>
 
     <Grid x:Name="LayoutRoot">
+        <Grid.Background>
+            <ImageBrush ImageSource="Assets/logo322.png" Opacity="0.2" Stretch="None" AlignmentY="Top">
+                <ImageBrush.RelativeTransform>
+                    <CompositeTransform CenterY="0.3" CenterX="0.5" ScaleY="0.85" ScaleX="0.85"/>
+                </ImageBrush.RelativeTransform>
+            </ImageBrush>
+        </Grid.Background>
 
         <Grid.ChildrenTransitions>
             <TransitionCollection>
@@ -34,38 +43,38 @@
 
         <!-- Title Panel -->
         <StackPanel Grid.Row="0" Margin="19,0,0,0"/>
-        <TextBlock HorizontalAlignment="Left" Margin="10,193,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding CurrentQuestion.Title}" VerticalAlignment="Top" Width="380" RequestedTheme="Dark" Foreground="#FFC99852" FontSize="14" FontWeight="Bold" FontFamily="Aharoni" TextAlignment="Justify" Height="154" />
+        <TextBlock HorizontalAlignment="Right" Margin="0,62,10,245" Grid.Row="1" TextWrapping="Wrap" Text="{Binding CurrentQuestion.Title}" Width="380" RequestedTheme="Dark" Foreground="#FFB27C08" FontSize="20" FontWeight="Bold" FontFamily="Aharoni" TextAlignment="Justify"/>
 
-        <Button x:ConnectionId='1' x:Name="Answer1" HorizontalAlignment="Left" Margin="10,349,0,0" Grid.Row="1" VerticalAlignment="Top" Height="115" Width="185" Command="{Binding UpdateCurrentQuestionCommand}" CommandParameter="{Binding CurrentQuestion.AnswersList[0].IsRight}"                      FontSize="14" BorderBrush="#FF631408" BorderThickness="2">
+        <Button x:ConnectionId='1' x:Name="Answer1" HorizontalAlignment="Left" Margin="10,390,0,0" Grid.Row="1" VerticalAlignment="Top" Height="100" Width="185" Command="{Binding UpdateCurrentQuestionCommand}" CommandParameter="{Binding CurrentQuestion.AnswersList[0].IsRight}"                      FontSize="14" BorderBrush="#FF631408" BorderThickness="2">
             <!--<Button.Background>
                 <ImageBrush ImageSource="Assets/ButtonAnswer.png" Stretch="None" Opacity="0.8"/>
             </Button.Background>-->
             <Button.Content>
-                <TextBlock Text="{Binding CurrentQuestion.AnswersList[0].Body}" TextWrapping="Wrap" Width="164" Height="83" FontSize="14" Foreground="#FFC99852" />
+                <TextBlock Text="{Binding CurrentQuestion.AnswersList[0].Body}" TextWrapping="Wrap" Width="164" Height="83" FontSize="18" Foreground="#FFC99852" />
             </Button.Content>
         </Button>
-        <Button x:ConnectionId='2' x:Name="Answer2" HorizontalAlignment="Left" Margin="205,349,0,0" Grid.Row="1" VerticalAlignment="Top" Height="115" Width="185" CommandParameter="{Binding CurrentQuestion.AnswersList[1].IsRight}"                      FontSize="14" BorderBrush="#FF631408" BorderThickness="2">
+        <Button x:ConnectionId='2' x:Name="Answer2" HorizontalAlignment="Left" Margin="205,390,0,0" Grid.Row="1" VerticalAlignment="Top" Height="100" Width="185" CommandParameter="{Binding CurrentQuestion.AnswersList[1].IsRight}"                      FontSize="14" BorderBrush="#FF631408" BorderThickness="2">
             <!--<Button.Background>
                 <ImageBrush ImageSource="Assets/ButtonAnswer.png" Stretch="None" Opacity="0.8"/>
             </Button.Background>-->
             <Button.Content>
-                <TextBlock Text="{Binding CurrentQuestion.AnswersList[1].Body}" TextWrapping="Wrap" Width="165" Height="81" FontSize="14" Foreground="#FFC99852" />
+                <TextBlock Text="{Binding CurrentQuestion.AnswersList[1].Body}" TextWrapping="Wrap" Width="165" Height="81" FontSize="18" Foreground="#FFC99852" />
             </Button.Content>
         </Button>
-        <Button x:ConnectionId='3' x:Name="Answer3" HorizontalAlignment="Left" Margin="10,451,0,0" Grid.Row="1" VerticalAlignment="Top" Height="115" Width="185" CommandParameter="{Binding CurrentQuestion.AnswersList[2].IsRight}"                      FontSize="14" BorderBrush="#FF631408" BorderThickness="2">
+        <Button x:ConnectionId='3' x:Name="Answer3" HorizontalAlignment="Left" Margin="10,477,0,0" Grid.Row="1" VerticalAlignment="Top" Height="100" Width="185" CommandParameter="{Binding CurrentQuestion.AnswersList[2].IsRight}"                      FontSize="14" BorderBrush="#FF631408" BorderThickness="2">
             <!--<Button.Background>
                 <ImageBrush ImageSource="Assets/ButtonAnswer.png" Stretch="None" Opacity="0.8"/>
             </Button.Background>-->
             <Button.Content>
-                <TextBlock Text="{Binding CurrentQuestion.AnswersList[2].Body}" TextWrapping="Wrap" Height="81" Width="164" FontSize="14" Foreground="#FFC99852" />
+                <TextBlock Text="{Binding CurrentQuestion.AnswersList[2].Body}" TextWrapping="Wrap" Height="81" Width="164" FontSize="18" Foreground="#FFC99852" />
             </Button.Content>
         </Button>
-        <Button x:ConnectionId='4' x:Name="Answer4" HorizontalAlignment="Left" Margin="205,451,0,0" Grid.Row="1" VerticalAlignment="Top" Height="115" Width="185" CommandParameter="{Binding CurrentQuestion.AnswersList[3].IsRight}"                      FontSize="14" BorderBrush="#FF631408" BorderThickness="2">
+        <Button x:ConnectionId='4' x:Name="Answer4" HorizontalAlignment="Left" Margin="205,477,0,0" Grid.Row="1" VerticalAlignment="Top" Height="100" Width="185" CommandParameter="{Binding CurrentQuestion.AnswersList[3].IsRight}"                      FontSize="14" BorderBrush="#FF631408" BorderThickness="2">
             <!--<Button.Background>
                 <ImageBrush ImageSource="Assets/ButtonAnswer.png" Stretch="None" Opacity="0.8"/>
             </Button.Background>-->
             <Button.Content>
-                <TextBlock Text="{Binding CurrentQuestion.AnswersList[3].Body}" TextWrapping="Wrap" Width="164" Height="90" FontSize="14" Foreground="#FFC99852" />
+                <TextBlock Text="{Binding CurrentQuestion.AnswersList[3].Body}" TextWrapping="Wrap" Width="164" Height="90" FontSize="18" Foreground="#FFC99852" />
             </Button.Content>
         </Button>
 

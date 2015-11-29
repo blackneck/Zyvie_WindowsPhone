@@ -124,7 +124,7 @@ namespace Zyvie.Zyvie_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[15];
+            _typeNameTable = new string[16];
             _typeNameTable[0] = "Zyvie.ViewModels.QuestionPageViewModel";
             _typeNameTable[1] = "Object";
             _typeNameTable[2] = "Zyvie.Models.QuizModel";
@@ -140,8 +140,9 @@ namespace Zyvie.Zyvie_XamlTypeInfo
             _typeNameTable[12] = "Zyvie.MainPage";
             _typeNameTable[13] = "Zyvie.ViewModels.ResultsPageViewModel";
             _typeNameTable[14] = "Zyvie.ResultsPage";
+            _typeNameTable[15] = "Zyvie.TotalSummaryPage";
 
-            _typeTable = new global::System.Type[15];
+            _typeTable = new global::System.Type[16];
             _typeTable[0] = typeof(global::Zyvie.ViewModels.QuestionPageViewModel);
             _typeTable[1] = typeof(global::System.Object);
             _typeTable[2] = typeof(global::Zyvie.Models.QuizModel);
@@ -157,6 +158,7 @@ namespace Zyvie.Zyvie_XamlTypeInfo
             _typeTable[12] = typeof(global::Zyvie.MainPage);
             _typeTable[13] = typeof(global::Zyvie.ViewModels.ResultsPageViewModel);
             _typeTable[14] = typeof(global::Zyvie.ResultsPage);
+            _typeTable[15] = typeof(global::Zyvie.TotalSummaryPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -199,6 +201,7 @@ namespace Zyvie.Zyvie_XamlTypeInfo
         private object Activate_12_MainPage() { return new global::Zyvie.MainPage(); }
         private object Activate_13_ResultsPageViewModel() { return new global::Zyvie.ViewModels.ResultsPageViewModel(); }
         private object Activate_14_ResultsPage() { return new global::Zyvie.ResultsPage(); }
+        private object Activate_15_TotalSummaryPage() { return new global::Zyvie.TotalSummaryPage(); }
         private void MapAdd_10_ObservableDictionary(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.String, global::System.Object>)instance;
@@ -310,6 +313,13 @@ namespace Zyvie.Zyvie_XamlTypeInfo
                 userType.Activator = Activate_14_ResultsPage;
                 userType.AddMemberName("NavigationHelper");
                 userType.AddMemberName("DefaultViewModel");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 15:   //  Zyvie.TotalSummaryPage
+                userType = new global::Zyvie.Zyvie_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_15_TotalSummaryPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

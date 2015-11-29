@@ -1,1 +1,1 @@
-E:\GitHub\Zyvie_WindowsPhone\Zyvie\Zyvie.csproj;neutral
+C:\Users\demom_000\codes\Zyvie\Zyvie\Zyvie.csproj;neutral
