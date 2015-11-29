@@ -5,15 +5,21 @@
     xmlns:local="using:Zyvie"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    mc:Ignorable="d">
+    <Page.Background>
+        <SolidColorBrush Color="Black">
+        </SolidColorBrush>
+        <!--<ImageBrush ImageSource="Assets/logo322.png" Opacity="0.2" Stretch="None" AlignmentY="Top">
+            <ImageBrush.RelativeTransform>
+                <CompositeTransform CenterY="0.3" CenterX="0.5" ScaleY="0.85" ScaleX="0.85"/>
+            </ImageBrush.RelativeTransform>
+        </ImageBrush>-->
+    </Page.Background>
 
     <Grid>
-        <Button x:Name="NextButton" Content="Пачаць гульню"  Margin="63,482,0,100" Width="274" Click="NextButton_Click" Height="56" BorderThickness="0" FontFamily="Aharoni" FontSize="18" FontWeight="Bold">
-            <Button.Background>
-                <ImageBrush ImageSource="Assets/ButtonStart.png" Opacity="0.8"/>
-            </Button.Background>
-        </Button>
-        <Image HorizontalAlignment="Left" Height="431" Margin="10,10,0,0" VerticalAlignment="Top" Width="380" Source="Assets/Logo322.png"/>
+        <Image x:Name="LogoImage" HorizontalAlignment="Center" Margin="50,156,50,184" VerticalAlignment="Center" Source="Assets/Logo_322.png" Width="300" Height="300" RenderTransformOrigin="0.484,0.416" Opacity="0.6">
+        </Image>
+        <Image Source="Assets/Zyvie.png" Margin="10,47,0,468" Opacity="0.6"/>
+        <Button x:Name="NextButton" Content="Пачаць гульню"  Margin="0,451,0,131" Width="300" Click="NextButton_Click" Height="56" BorderThickness="0" FontFamily="Segoe WP SemiLight" FontSize="18" FontWeight="Bold" Background="#FFF82708" Opacity="0.6" HorizontalAlignment="Center"/>
     </Grid>
 </Page>

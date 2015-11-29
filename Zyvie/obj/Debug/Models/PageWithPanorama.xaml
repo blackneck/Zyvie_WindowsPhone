@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="Zyvie.PageWithPanorama"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Zyvie.Models"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Hub Header="Hub">
+            <HubSection Header="HubSection 0">
+                <DataTemplate>
+                    <Grid>
+                        <TextBlock Text="huj"/>
+                    </Grid>
+                </DataTemplate>
+            </HubSection>
+            <HubSection Header="HubSection 1">
+                <DataTemplate>
+                    <Grid>
+                        <TextBlock Text="huj1"/>
+                    </Grid>
+                </DataTemplate>
+            </HubSection>
+        </Hub>
+
+    </Grid>
+</Page>
+

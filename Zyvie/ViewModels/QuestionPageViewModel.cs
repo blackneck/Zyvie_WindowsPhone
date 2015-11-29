@@ -17,10 +17,8 @@ namespace Zyvie.ViewModels
 {
     public class QuestionPageViewModel: INotifyPropertyChanged
     {
-        private static string _getUrl = "http://3ae8397d.ngrok.io/quizzes/general.json";
-        private static string _saveUrl = "http://3ae8397d.ngrok.io/quizzes/result";
-        //var baseUrl = "http://172.20.10.11:3000/quizzes/general.json";
-        //var baseUrl = "http://google.com";
+        private static string _getUrl = "http://46.101.240.50/quizzes/general.json";
+        private static string _saveUrl = "http://46.101.240.50/quizzes/result";
 
         #region [Properties, Variables]
 

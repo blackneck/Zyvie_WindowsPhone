@@ -6,16 +6,35 @@
     xmlns:local="using:Zyvie"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    mc:Ignorable="d">
+    <Page.Background>
+        <SolidColorBrush Color="Black">
+        </SolidColorBrush>
+        <!--<ImageBrush ImageSource="Assets/logo322.png" Opacity="0.2" Stretch="None" AlignmentY="Top">
+            <ImageBrush.RelativeTransform>
+                <CompositeTransform CenterY="0.3" CenterX="0.5" ScaleY="0.85" ScaleX="0.85"/>
+            </ImageBrush.RelativeTransform>
+        </ImageBrush>-->
+    </Page.Background>
 
     <Page.DataContext>
         <Core:ResultsPageViewModel />
     </Page.DataContext>
 
     <Grid x:Name="LayoutRoot">
-        <TextBlock Text="Žyvie" Style="{ThemeResource TitleTextBlockStyle}" Margin="10,10,10,596"/>
-        <TextBlock Text="Correctly answered questions:" HorizontalAlignment="Left" Margin="10,250,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="380" Foreground="#FFC31EBA" FontFamily="Aharoni" FontSize="18" TextAlignment="Center"/>
-        <TextBlock Text="{Binding CorrectAnswersRate}" HorizontalAlignment="Center" Margin="10,304,10,145" TextWrapping="Wrap" VerticalAlignment="Center" Height="191" Width="380" FontFamily="Aharoni" FontSize="36" Foreground="#FFC31EBA" TextAlignment="Center"/>
+        <Grid.Background>
+            <ImageBrush ImageSource="Assets/logo_322.png" Opacity="0.2" Stretch="UniformToFill" AlignmentY="Top">
+                <ImageBrush.RelativeTransform>
+                    <CompositeTransform CenterY="0.5" CenterX="0.5" ScaleX="1.4" ScaleY="1.4"/>
+                </ImageBrush.RelativeTransform>
+                <ImageBrush.Transform>
+                    <CompositeTransform TranslateX="-100" TranslateY="30"/>
+                </ImageBrush.Transform>
+            </ImageBrush>
+        </Grid.Background>
+        <TextBlock Text="Правильных адказаў:" HorizontalAlignment="Center" Margin="10,250,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FFC99852" FontFamily="Segoe WP SemiLight" FontSize="24" TextAlignment="Center"/>
+        <TextBlock Text="{Binding CorrectAnswersRate}" HorizontalAlignment="Center" Margin="10,292,10,284" TextWrapping="Wrap" VerticalAlignment="Center" Height="64" Width="380" FontFamily="Segoe WP Semibold" FontSize="30" Foreground="#FFC99852" TextAlignment="Center" FontWeight="Bold"/>
+        <Button Content="Зноў" FontFamily="Segoe WP SemiLight" FontSize="24" Foreground="#FFC99852" HorizontalAlignment="Center" Margin="144,370,147,212" BorderThickness="1" Click="Button_Click" VerticalAlignment="Center" Padding="9.5,1,9.5,3.5" Background="Transparent"/>
+
     </Grid>
 </Page>
