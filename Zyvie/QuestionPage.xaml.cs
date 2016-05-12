@@ -168,5 +168,10 @@ namespace Zyvie
                 Frame.Navigate(typeof(ResultsPage));
             }
         }
+
+        private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

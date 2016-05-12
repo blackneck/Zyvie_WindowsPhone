@@ -4,6 +4,8 @@
     <Machine>GLADOS</Machine>
     <WindowsUser>demom_000</WindowsUser>
     <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
+    <TargetOsVersion>6.3</TargetOsVersion>
+    <TargetOsDescription>Windows Phone 8.1</TargetOsDescription>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>b99d81d3-e3da-4101-ba38-ba27f05049dd</PackageIdentityName>
@@ -50,34 +52,27 @@
     <AppxPackagedFile Include="C:\Users\demom_000\codes\Zyvie\Zyvie\Assets\logo_322.png">
       <PackagePath>Assets\logo_322.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\demom_000\codes\Zyvie\Zyvie\Assets\refresh.png">
-      <PackagePath>Assets\refresh.png</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\demom_000\codes\Zyvie\Zyvie\Assets\SmallLogo.scale-240.png">
       <PackagePath>Assets\SmallLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\demom_000\codes\Zyvie\Zyvie\Assets\SplashScreen.scale-240.png">
-      <PackagePath>Assets\SplashScreen.scale-240.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    <AppxPackagedFile Include="C:\Users\demom_000\codes\Zyvie\Zyvie\Assets\1SplashScreen.scale-240.png">
+      <PackagePath>Assets\1SplashScreen.scale-240.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\demom_000\codes\Zyvie\Zyvie\Assets\Square.png">
       <PackagePath>Assets\Square.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\demom_000\codes\Zyvie\Zyvie\Assets\Square71x71Logo.scale-240.png">
-      <PackagePath>Assets\Square71x71Logo.scale-240.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\demom_000\codes\Zyvie\Zyvie\Assets\StoreLogo.scale-240.png">
-      <PackagePath>Assets\StoreLogo.scale-240.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\demom_000\codes\Zyvie\Zyvie\Assets\WideLogo.scale-240.png">
-      <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    <AppxPackagedFile Include="C:\Users\demom_000\codes\Zyvie\Zyvie\Assets\twitter.png">
+      <PackagePath>Assets\twitter.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\demom_000\codes\Zyvie\Zyvie\Assets\Zyvie.png">
       <PackagePath>Assets\Zyvie.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\demom_000\codes\Zyvie\Zyvie\StoreManifest.xml">
+      <PackagePath>StoreManifest.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\demom_000\codes\Zyvie\Zyvie\bin\Debug\Zyvie.xr.xml">
+      <PackagePath>Zyvie.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\demom_000\codes\Zyvie\Zyvie\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
@@ -93,9 +88,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\demom_000\codes\Zyvie\Zyvie\bin\Debug\TotalSummaryPage.xbf">
       <PackagePath>TotalSummaryPage.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\demom_000\codes\Zyvie\Zyvie\bin\Debug\Zyvie.xr.xml">
-      <PackagePath>Zyvie.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\demom_000\codes\Zyvie\Zyvie\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>

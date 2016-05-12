@@ -32,7 +32,7 @@ namespace Zyvie
 
         void MainPage_Loaded(object sender, RoutedEventArgs e)
         {
-            Duration duration = new Duration(TimeSpan.FromSeconds(80));
+            Duration duration = new Duration(TimeSpan.FromSeconds(100));
             Storyboard storyBoard = new Storyboard();
             storyBoard.RepeatBehavior = RepeatBehavior.Forever;
             storyBoard.Duration = duration;
@@ -48,7 +48,7 @@ namespace Zyvie
             Storyboard.SetTargetProperty(doubleAnimation, "Angle");
             doubleAnimation.To = 360;
 
-            LogoImage.RenderTransform = rotateTransform;            
+            LogoImage.RenderTransform = rotateTransform;
 
             storyBoard.Begin();
         }

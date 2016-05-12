@@ -8,7 +8,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
     <Page.Background>
-        <SolidColorBrush Color="Gainsboro">
+        <SolidColorBrush Color="Black">
         </SolidColorBrush>
         <!--<ImageBrush ImageSource="Assets/logo322.png" Opacity="0.2" Stretch="None" AlignmentY="Top">
             <ImageBrush.RelativeTransform>
@@ -16,22 +16,32 @@
             </ImageBrush.RelativeTransform>
         </ImageBrush>-->
     </Page.Background>
-    
+
     <Page.DataContext>
         <Core:ResultsPageViewModel />
     </Page.DataContext>
 
     <Grid x:Name="LayoutRoot">
         <Grid.Background>
-            <ImageBrush ImageSource="Assets/logo322.png" Opacity="0.2" Stretch="None" AlignmentY="Top">
+            <ImageBrush ImageSource="Assets/logo_322.png" Opacity="0.2" Stretch="UniformToFill" AlignmentY="Top">
                 <ImageBrush.RelativeTransform>
-                    <CompositeTransform CenterY="0.3" CenterX="0.5" ScaleY="0.85" ScaleX="0.85"/>
+                    <CompositeTransform CenterY="0.5" CenterX="0.5" ScaleX="1.4" ScaleY="1.4"/>
                 </ImageBrush.RelativeTransform>
+                <ImageBrush.Transform>
+                    <CompositeTransform TranslateX="-100" TranslateY="30"/>
+                </ImageBrush.Transform>
             </ImageBrush>
         </Grid.Background>
-        <TextBlock Text="Žyvie" Style="{ThemeResource TitleTextBlockStyle}" Margin="10,10,10,596"/>
-        <TextBlock Text="Кашэрных адказау:" HorizontalAlignment="Center" Margin="10,250,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FFC99852" FontFamily="Aharoni" FontSize="36" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Center" Margin="10,250,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FFC99852" FontFamily="Aharoni" FontSize="36" TextAlignment="Center">
+        	<Run Text="П"/>
+        	<Run Text="рав"/>
+        	<Run Text="і"/>
+        	<Run Text="льных адказаў:"/>
+        </TextBlock>
         <TextBlock Text="{Binding CorrectAnswersRate}" HorizontalAlignment="Center" Margin="10,304,10,277" TextWrapping="Wrap" VerticalAlignment="Center" Height="59" Width="380" FontFamily="Aharoni" FontSize="36" Foreground="#FFC99852" TextAlignment="Center"/>
-        <Button Content="Зноу" FontFamily="Aharoni" FontSize="36" Foreground="#FFC99852" HorizontalAlignment="Center" Margin="141,358,143,219" BorderThickness="1" Click="Button_Click"/>                                
+        <Button Content="Зноў" FontFamily="Aharoni" FontSize="36" Foreground="#FFC99852" HorizontalAlignment="Center" Margin="144,340,147,235" BorderThickness="1" Click="Button_Click" VerticalAlignment="Center" Height="65" Padding="9.5,4.5,9.5,2.5"/>
+        <Grid>
+
+        </Grid>
     </Grid>
 </Page>
